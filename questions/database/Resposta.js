@@ -1,6 +1,7 @@
+// imports
 const Sequelize = require("sequelize");
 const connection = require("./database");
-
+// crete table
 const Resposta = connection.define('Resposta',{
     corpo:{
         type: Sequelize.TEXT,

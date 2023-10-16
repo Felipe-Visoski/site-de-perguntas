@@ -1,3 +1,4 @@
+// imports
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
@@ -20,7 +21,7 @@ app.use(express.static('public'));
 //body Parses
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
-// Rotas
+// routes
 app.get("/",(req,res)=> {
     pergunta1.findAll({raw: true, order:[
         ["id","DESC"]
